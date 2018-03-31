@@ -1,6 +1,8 @@
 package Model;
 
-public class Tile {
+import java.util.Observable;
+
+public class Tile extends Observable {
 	
 	// elke tile krijgt een getal toegekend;
 	private int number;
@@ -34,10 +36,5 @@ public class Tile {
 
 	public void setGuessed(boolean guessed) {
 		this.guessed = guessed;
-	}
-	
-	//Observer pattern
-	public void update() {
-		//
 	}
 }

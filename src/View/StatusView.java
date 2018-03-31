@@ -1,5 +1,8 @@
 package View;
 
-public class StatusView {
+import Model.MemoryModel;
 
+public class StatusView {
+	// het model van het Memory spel;
+	private MemoryModel model;
 }
