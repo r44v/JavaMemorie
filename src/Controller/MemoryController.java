@@ -1,5 +1,7 @@
 package Controller;
 
+import Model.MemoryModel;
+
 public class MemoryController {
 	// het model van het Memory spel;
 	private MemoryModel model;

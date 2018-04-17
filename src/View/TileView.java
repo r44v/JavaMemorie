@@ -14,7 +14,7 @@ public class TileView {
 		{
 			URL imageURL = this.getClass().getResource("images/plaatje01.jpg");
 		}
-		catch (Exception e)‏
+		catch (Exception e)
 		{
 			System.out.println("Something went wrong when loading the image");
 		}

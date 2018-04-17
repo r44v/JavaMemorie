@@ -1,9 +1,10 @@
 package Model;
 
 import java.util.List;
+import java.util.Observable;
 import java.util.Timer;
 
-public class MemoryModel {
+public class MemoryModel extends Observable {
 	// het aantal rijen van het speelbord;
 	private int numberOfRows;
 	
@@ -18,4 +19,9 @@ public class MemoryModel {
 	
 	// de timer die er voor zorgt dat de 2 getoonde plaatjes weer verborgen worden;
 	private Timer timer;
+	
+	public void Change() {
+		setChanged();
+		notifyObservers();
+	}
 }
